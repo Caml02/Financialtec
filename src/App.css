@@ -1,17 +1,71 @@
-.Applogo {
-    width: 30px;
-    height: 30px;
-    color: red;
-  }
+/*NavBar settings*/
 
-.NavBar-custom, 
+.Applogo {
+    width: 25px;
+    height: 25px;
+  }
+ 
 .footer-custom,
+.btn-custome,
 .custome {
   background: rgb(92,182,249);
   background: linear-gradient(90deg, rgba(92,182,249,1) 0%, rgba(59,112,252,1) 100%);
 }
 
+.btn-custome {
+  color: white;
+  font-weight: bold;
+  margin: 1rem 0rem;
 
-.icon-color {
-  color: black;
+}
+
+
+/* CARDS SETTINGS */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 2.5rem;
+}
+
+
+.form-control {
+  border-radius: 5px;
+  font-size: 1.2rem;
+  height: 50px;
+}
+
+.form-container {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/** About us  **/
+
+.about-us {
+  padding: 100px 0;
+}
+
+.about-us h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.about-us img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer settings */
+.footer-text {
+  color: white;
 }
