@@ -1,5 +1,5 @@
 import React from 'react';
-import LandingPage from './components/LandingPage';
+import NavigationBar from './components/NavigationBar';
 import Footer from './components/Footer';
 import Services from './components/Services';
 import AboutUs from './components/AboutUs';
@@ -11,7 +11,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      <LandingPage/>
+      <NavigationBar/>
       <AboutUs/>
       <Services/>
       <FinancialForm/>

@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import LogoTec from '../img/logoTec3.svg';
+import ScrollNav from '../helpers/ScrollNav';
 
-function LandingPage() {
+
+function NavigationBar() {
+  useEffect(() => {
+    ScrollNav();
+  }, []);
+  
   return (
-
     <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="/"> 
@@ -13,9 +18,9 @@ function LandingPage() {
           </button>
             <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
               <div className="navbar-nav ">
-                <a className="nav-link" aria-current="page" href="/">Inicio</a>
-                <a className="nav-link" href="/">Servicios</a>
-                <a className="nav-link" href="/">Sobre Nosotros</a>
+                <a className="nav-link" href="#aboutUs">Nosotros</a>
+                <a className="nav-link" href="#services">Servicios</a>
+                <a className="nav-link" href="#financialForm">Contactanos</a>
               </div>
             </div>
       </div>
@@ -23,4 +28,5 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default NavigationBar;
+
